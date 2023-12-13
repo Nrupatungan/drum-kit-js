@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumkit JS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <script src="./app/js/script.js" defer></script>
+</head>
+<body class="bg-bg_people bg-cover bg-no-repeat min-h-screen grid place-items-center px-6">
+    <section class="keys flex gap-10 flex-wrap">
+        <div class="key bg-black bg-opacity-60 border-4 border-black w-[5rem] py-3 cursor-pointer active:scale-[1.1] active:border-amber-300 overflow-hidden flex flex-col justify-center items-center active:shadow-[5px_5px_50px_-10px_rgb(257,211,77)] transition-all duration-[0.07s]" data-key="65">
+            <kbd class="text-3xl text-white font-bold font-shadow">A</kbd>
+            <p class="uppercase text-amber-300 text-sm font-semibold">clap</p>
+        </div>
+        <div class="key bg-black bg-opacity-60 border-4 border-black w-[5rem] py-3 cursor-pointer active:scale-[1.1] active:border-amber-300 overflow-hidden flex flex-col justify-center items-center active:shadow-[5px_5px_50px_-10px_rgb(257,211,77)] transition-all duration-[0.07s]" data-key="83">
+            <kbd class="text-3xl text-white font-bold font-shadow">S</kbd>
+            <p class="uppercase text-amber-300 text-sm font-semibold">hihat</p>
+        </div>
+        <div class="key bg-black bg-opacity-60 border-4 border-black w-[5rem] py-3 cursor-pointer active:scale-[1.1] active:border-amber-300 overflow-hidden flex flex-col justify-center items-center active:shadow-[5px_5px_50px_-10px_rgb(257,211,77)] transition-all duration-[0.07s]" data-key="68">
+            <kbd class="text-3xl text-white font-bold font-shadow">D</kbd>
+            <p class="uppercase text-amber-300 text-sm font-semibold">kick</p>
+        </div>
+        <div class="key bg-black bg-opacity-60 border-4 border-black w-[5rem] py-3 cursor-pointer active:scale-[1.1] active:border-amber-300 overflow-hidden flex flex-col justify-center items-center active:shadow-[5px_5px_50px_-10px_rgb(257,211,77)] transition-all duration-[0.07s]" data-key="70">
+            <kbd class="text-3xl text-white font-bold font-shadow">F</kbd>
+            <p class="uppercase text-amber-300 text-sm font-semibold">openhat</p>
+        </div>
+        <div class="key bg-black bg-opacity-60 border-4 border-black w-[5rem] py-3 cursor-pointer active:scale-[1.1] active:border-amber-300 overflow-hidden flex flex-col justify-center items-center active:shadow-[5px_5px_50px_-10px_rgb(257,211,77)] transition-all duration-[0.07s]" data-key="71">
+            <kbd class="text-3xl text-white font-bold font-shadow">G</kbd>
+            <p class="uppercase text-amber-300 text-sm font-semibold">boom</p>
+        </div>
+        <div class="key bg-black bg-opacity-60 border-4 border-black w-[5rem] py-3 cursor-pointer active:scale-[1.1] active:border-amber-300 overflow-hidden flex flex-col justify-center items-center active:shadow-[5px_5px_50px_-10px_rgb(257,211,77)] transition-all duration-[0.07s]" data-key="72">
+            <kbd class="text-3xl text-white font-bold font-shadow">H</kbd>
+            <p class="uppercase text-amber-300 text-sm font-semibold">ride</p>
+        </div>
+        <div class="key bg-black bg-opacity-60 border-4 border-black w-[5rem] py-3 cursor-pointer active:scale-[1.1] active:border-amber-300 overflow-hidden flex flex-col justify-center items-center active:shadow-[5px_5px_50px_-10px_rgb(257,211,77)] transition-all duration-[0.07s]" data-key="74">
+            <kbd class="text-3xl text-white font-bold font-shadow">J</kbd>
+            <p class="uppercase text-amber-300 text-sm font-semibold">snare</p>
+        </div>
+        <div class="key bg-black bg-opacity-60 border-4 border-black w-[5rem] py-3 cursor-pointer active:scale-[1.1] active:border-amber-300 overflow-hidden flex flex-col justify-center items-center active:shadow-[5px_5px_50px_-10px_rgb(257,211,77)] transition-all duration-[0.07s]" data-key="75">
+            <kbd class="text-3xl text-white font-bold font-shadow">K</kbd>
+            <p class="uppercase text-amber-300 text-sm font-semibold">tom</p>
+        </div>
+        <div class="key bg-black bg-opacity-60 border-4 border-black w-[5rem] py-3 cursor-pointer active:scale-[1.1] active:border-amber-300 overflow-hidden flex flex-col justify-center items-center active:shadow-[5px_5px_50px_-10px_rgb(257,211,77)] transition-all duration-[0.07s]" data-key="76">
+            <kbd class="text-3xl text-white font-bold font-shadow">L</kbd>
+            <p class="uppercase text-amber-300 text-sm font-semibold">tink</p>
+        </div>
+    </section>
+
+    <audio data-key="65" src="./assets/sounds/clap.wav"></audio>
+    <audio data-key="83" src="./assets/sounds/hihat.wav"></audio>
+    <audio data-key="68" src="./assets/sounds/kick.wav"></audio>
+    <audio data-key="70" src="./assets/sounds/openhat.wav"></audio>
+    <audio data-key="71" src="./assets/sounds/boom.wav"></audio>
+    <audio data-key="72" src="./assets/sounds/ride.wav"></audio>
+    <audio data-key="74" src="./assets/sounds/snare.wav"></audio>
+    <audio data-key="75" src="./assets/sounds/tom.wav"></audio>
+    <audio data-key="76" src="./assets/sounds/tink.wav"></audio>
+    
+</body>
+</html>
